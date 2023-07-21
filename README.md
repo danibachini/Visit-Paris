@@ -1,6 +1,9 @@
 # Visit Paris
 ## Website developed as an exercise at CS50 course
 
+#### Video demo: 
+https://youtu.be/jWItTkXxzCI
+
 ### Exercise 
 Build a simple homepage using HTML, CSS, and JavaScript
 
@@ -18,5 +21,3 @@ The website aims to guide tourists in Paris to know better about the city and al
 - Restaurants
 - Museums
 - Tourism
-
-### Video demo: 
