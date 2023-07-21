@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+
+      <!-- make it responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <!-- Styles CSS -->
+      <link href="styles.css" rel="stylesheet">
+
+      <title>Visit Paris</title>
+    </head>
+    <body>
+      <!-- navbar -->
+      <div class="bg-img">
+        <div class="container">
+          <div class="row justify-content-md-center pt-4">
+            <div class="col-md-auto">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link mx-2" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="./restaurants.html">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="./museums.html">Museums</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="./tourism.html">Tourism</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class = "home-title">Visit Paris</h1>
+        <h2 class = "home-subtitle2">The city of lights</h2>
+        <p class="text-center">Paris is one of the most beautiful cities in the world. It is known worldwide for the Louvre Museum, Notre-Dame cathedral, and the Eiffel tower. It has a reputation of being a romantic and cultural city. The city is also known for its high-quality gastronomy and the terraces of its cafés.</p>
+        <h3 class = "home-subtitle3">Discover</h3>
+      </div>
+
+      <!-- cards taking to the internal pages - from https://getbootstrap.com/docs/5.2/components/card/  -->
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto d-flex justify-content-center pt-2 pb-2">
+            <div class="card" style="width: 18rem;">
+              <img src="images/gastronomy.jpeg" class="card-img-top" alt="Hand of a chef preparing a dish">
+              <div class="card-body">
+                <h5 class="card-title">La gastronomie</h5>
+                <p class="card-text">French gastronomic food was given Unesco humanity heritage status in 2010 and Paris is the best place to enjoy it</p>
+
+                <a href="./restaurants.html" class="btn btn-primary">See Restaurants</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-auto d-flex justify-content-center pt-2 pb-2">
+            <div class="card" style="width: 18rem;">
+              <img src="images/louvre.jpeg" class="card-img-top" alt="Picture of Louvre Museum">
+              <div class="card-body">
+                <h5 class="card-title">Les beaux arts</h5>
+                <p class="card-text">With the Centre Pompidou, Musée d'Orsay and The Louvre, there is an incredible amount of art in Paris worth seeing</p>
+                <a href="./museums.html" class="btn btn-primary">See Museums</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-auto d-flex justify-content-center pt-2 pb-2">
+            <div class="card" style="width: 18rem;">
+              <img src="images/pont.webp" class="card-img-top" alt="Picture of the bridge Alexandre III">
+              <div class="card-body">
+                <h5 class="card-title">Oh la la, Paris!</h5>
+                <p class="card-text">Thanks to its rich history, culture, and beautiful architecture, Paris is the 3rd most visited city in the world</p>
+                <a href="./tourism.html" class="btn btn-primary">See Tourism</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- newsletter -->
+      <div class="container">
+        <h3 class = "home-subtitle3 pb-0">Subscribe to our newsletter</h3>
+        <p class="text-center" >Receive updates on new restaurants, attractions, discounts, hidden gems, and much more!</p>
+        <div class="input">
+          <input type="text" id = "accemail" placeholder="Enter your e-mail">
+          <p id="errorNews"></p>
+        </div>
+        <div class="input-button">
+          <button type = "button" id = "confirm" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pt-3 pb-3 mt-3 mb-3">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="./restaurants.html">Restaurants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="./museums.html">Museums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="./tourism.html">Tourism</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted">©2023 This is CS50 </p>
+        </footer>
+      </div>
+
+      <script>
+
+        // newsletter alert JS
+        document.addEventListener("DOMContentLoaded", function() {
+          let accemail = document.querySelector("#accemail");
+          let confirm = document.querySelector("#confirm");
+          let errorNews = document.querySelector("#errorNews");
+          confirm.addEventListener("click", function() {
+            if (accemail.value == null || accemail.value == "") {
+              errorNews.innerHTML = "Please, provide a valid e-mail";
+              errorNews.style.color = "#b40101";
+            }
+            else {
+              window.alert("Welcome! You are now subscribed to our newsletter!");
+              errorNews.innerHTML = "";
+              accemail.value = "";
+            };
+          });
+        });
+
+      </script>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+      <!-- Popper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

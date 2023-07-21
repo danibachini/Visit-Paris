@@ -1,0 +1,147 @@
+body {
+    /* background */
+    background-image: url("images/bg-paris.jpg");
+    background-position: center center;
+    object-fit: contain;
+    background-repeat: repeat;
+}
+
+/* navbar image home */
+.bg-img {
+    /* image */
+    background-image: url("images/paris_eiffel_tower.webp");
+    min-height: 750px;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* h1 homepage */
+.home-title {
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* h2 homepage */
+.home-subtitle2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* h3 homepage */
+.home-subtitle3 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* buttons of the cards */
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+
+/* newsletter */
+input[type="text"] {
+    position: relative;
+    line-height: 1.8;
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.input {
+    text-align: center;
+}
+
+.input-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* navbar image restaurants */
+.bg-img-rest {
+    /* image */
+    background-image: url("images/gastronomy.jpeg");
+    min-height: 350px;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* h2 restaurant page */
+.rest-subtitle2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: 0px;
+}
+
+/* navbar image museums */
+.bg-img-muse {
+    /* image */
+    background-image: url("images/louvre.jpeg");
+    min-height: 350px;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* h2 museums page */
+.muse-subtitle2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: 0px;
+}
+
+/* navbar image tourism */
+.bg-img-tour {
+    /* image */
+    background-image: url("images/pont.webp");
+    min-height: 350px;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* h2 tourism page */
+.tour-subtitle2 {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: 0px;
+}
+
+/* container of the youtube video */
+.container iframe {
+    position: relative;
+    width: 100%;
+    height: 730px;
+}
